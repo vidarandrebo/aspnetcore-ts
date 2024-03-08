@@ -1,6 +1,6 @@
 {
     "name": "aspnetcore-ts",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "author": {
         "name": "Vidar André Bø"
@@ -11,13 +11,11 @@
         "prepare": "tsc"
     },
     "exports": {
-        ".": [
-            "./Authentication/BearerToken.ts",
-            "./Http/Abstractions.ts",
-            "./Identity/Data.ts"
-        ]
+        "./Authentication/BearerToken.ts": "./Authentication/BearerToken.ts",
+        "./Identity/Data.ts": "./Identity/Data.ts",
+        "./Http/Abstractions.ts": "./Http/Abstractions.ts"
     },
-  "devDependencies": {
-    "typescript": "^5.4.2"
-  }
+    "devDependencies": {
+        "typescript": "^5.4.2"
+    }
 }
